@@ -32,9 +32,21 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 
 ### 2. Hardware PIN Configurations  
+This library was tested in three (3) Configurations. 
+1. Using ESP8266 with DHT11 and BMP180
+2. Using ESP8266 with only BME280
+3. Using ESP8266 with only BME280 with LCD Display 20x4 I2C 
 
+
+#### Using ESP8266 with DHT11 and BMP180
 
 ![WeatherBayanihan-PINOUT-ESP8266-DHT11-BMP180](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-DHT11-BMP180.png)
 
+#### Using ESP8266 with only BME280
+
 ![WeatherBayanihan-PINOUT-ESP8266-BME280](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280.png)
 
+
+#### Using ESP8266 with only BME280 with LCD Display 20x4 I2C 
+
+![WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD.png)
