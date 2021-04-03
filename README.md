@@ -22,7 +22,7 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 - **WeatherBayanihanIoT** The Arduino Sketch. Shared configurations and variables are included in this file as preprocessor directives 
 - **ConfigurableSerial** Manages the Serial Communications. This turns on or off Printing Serial for debugging.
-- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal.
+- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal. This is a fork from [ESP8266-SimpleWifiManager](https://github.com/johndelizo/ESP8266-SimpleWifiManager) and more details are available in its own Github Page.
 - **SimpleLCDManager** Manages how to print in LCD Screen
 - **SensorManager** Manages which sensors are enabled or disabled. 
 - **WeatherBayanihanIoTClientManager** Contains the HTTP Client and how to send data to [https://api.weather-bayanihan.ph/](https://api.weather-bayanihan.ph/) 
@@ -32,7 +32,7 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 
 ### 2. Hardware PIN Configurations  
-This library was tested in three (3) Configurations. 
+This library was tested in three (3) configurations and combinations of sensors and LCD. The following are the PIN outs of each.
 1. Using ESP8266 with DHT11 and BMP180
 2. Using ESP8266 with only BME280
 3. Using ESP8266 with only BME280 with LCD Display 20x4 I2C 
