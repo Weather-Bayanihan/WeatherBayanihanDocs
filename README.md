@@ -6,6 +6,8 @@ Docs and step by step guide on building your own IoT Weather Devices
  - [Quick start](#quick-start)
    - [Arduino Sketch](#1-arduino-sketch)
    - [Hardware PIN Configurations](#2-hardware-pin-configurations)
+ - [Troubleshooting](#troubleshooting)
+
 
 ## About
 WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and a number of sensors to collect weather related data such as Humidity, Temperature, and Pressure.
@@ -22,7 +24,7 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 - **WeatherBayanihanIoT** The Arduino Sketch. Shared configurations and variables are included in this file as preprocessor directives 
 - **ConfigurableSerial** Manages the Serial Communications. This turns on or off Printing Serial for debugging.
-- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal.
+- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal. This is a fork from [ESP8266-SimpleWifiManager](https://github.com/johndelizo/ESP8266-SimpleWifiManager) and more details are available in its own Github Page.
 - **SimpleLCDManager** Manages how to print in LCD Screen
 - **SensorManager** Manages which sensors are enabled or disabled. 
 - **WeatherBayanihanIoTClientManager** Contains the HTTP Client and how to send data to [https://api.weather-bayanihan.ph/](https://api.weather-bayanihan.ph/) 
@@ -32,9 +34,45 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 
 ### 2. Hardware PIN Configurations  
+This library was tested in three (3) configurations and combinations of sensors and LCD. The following are the PIN outs of each.
+1. Using ESP8266 with DHT11 and BMP180
+2. Using ESP8266 with only BME280
+3. Using ESP8266 with only BME280 with LCD Display 20x4 I2C 
 
+
+#### Using ESP8266 with DHT11 and BMP180
 
 ![WeatherBayanihan-PINOUT-ESP8266-DHT11-BMP180](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-DHT11-BMP180.png)
 
+#### Using ESP8266 with only BME280
+
 ![WeatherBayanihan-PINOUT-ESP8266-BME280](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280.png)
 
+
+#### Using ESP8266 with only BME280 with LCD Display 20x4 I2C 
+
+![WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD.png)
+
+
+
+
+## Troubleshooting 
+1.	Unable to connect to station 
+- Check if the device is powered on. 
+- Wait for 5 mins after boot and retry.
+- On the mobile phone, tap forget the station Wi-Fi network and try again. 
+- Check password of the station Wi-Fi. Default password is “hello123”. 
+- Known Issue: Establishing the connection between the mobile phone and demo device may take too long for first time use. 
+
+2.	Unable to connect the Demo Device to the Wi-Fi
+- Check if the device is powered on. 
+- Wait for 5 mins after boot and retry.
+- Check your Wi-Fi password.
+- Known Issue: The station may have an issue on a crowded network where there are more than 8 to 10 Wi-Fi broadcasting at the same time. 
+
+3.	Device not sending data
+- Check if the device is powered on. 
+- Check device internet connectivity as shown in the first line of the LCD.
+- The device should send data during boot-up sequence. Restarting the demo device should test the sending data thru boot-up.
+- Check Device Id. Update the device Id once more as described in the “Adding device identifications” step. 
+- The device is unable to sense weather data. The device will not be able to send zero data or will not be accepted by Weather Bayanihan service. Check connections of the device
