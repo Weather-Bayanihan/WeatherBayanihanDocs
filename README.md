@@ -54,19 +54,19 @@ This library was tested in three (3) configurations and combinations of sensors 
 ![WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD.png)
 
 
-### 3. Connecting to the device
-1. **Powering up the device** 
-  - Connect the AC Adapter to the ESP8266 thru a 220V outlet. 
-  - For versions with red LED, the device should light-up. 
+### 3. Connecting to the device 
+1. **Powering up the device**  
+  - Connect the AC Adapter to the ESP8266 thru a 220V outlet.  
+  - For versions with red LED, the device should light-up.  
  
-2. **Managing the IoT Device thru its Station Wi-Fi and Portal**  
-  - Wait for about 5 Minutes for the device to perform start-up. The device should broadcast itself as a Wi-Fi Station and its name as its SSID. 
-  - Open the network connection of your mobile phone. Search for SSID of IoT Device (N) where N is the number of your device. Use “hello123” as your password. 
+2. **Managing the IoT Device thru its Station Wi-Fi and Portal**   
+  - Wait for about 5 Minutes for the device to perform start-up. The device should broadcast itself as a Wi-Fi Station and its name as its SSID.  
+  - Open the network connection of your mobile phone. Search for SSID of IoT Device (N) where N is the number of your device. Use “hello123” as your password.  
 
 ![weather-bayanihan-04-connectingtodevice1](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice1.png)
 ![weather-bayanihan-04-connectingtodevice2](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice2.png)
 
-  - Click connect or join and wait for the device to connect. Note that there could be a significant delay on connecting on the first try depending on the mobile phone or laptop used to configure the IoT Device
+  - Click connect or join and wait for the device to connect. Note that there could be a significant delay on connecting on the first try depending on the mobile phone or laptop used to configure the IoT Device 
 
 ![weather-bayanihan-04-connectingtodevice3](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice3.png)
 ![weather-bayanihan-04-connectingtodevice4](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice4.png)
@@ -76,18 +76,42 @@ This library was tested in three (3) configurations and combinations of sensors 
 ![weather-bayanihan-04-connectingtodevice5](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice5.png)
 ![weather-bayanihan-04-connectingtodevice6](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice6.png)
 
-  - Using a mobile phone that is connected to the Wi-Fi network of the IoT Device, open a web browser and navigate to http://11.1.1.1/ (Address: eleven, one, one, one) and the IoT Device Portal should appear
+  - Using a mobile phone that is connected to the Wi-Fi network of the IoT Device, open a web browser and navigate to http://11.1.1.1/ (Address: eleven, one, one, one) and the IoT Device Portal should appear 
 
 ![weather-bayanihan-04-connectingtodevice7](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice7.png)
 
- 3. **Connecting the device to the Internet** 
-  - Make sure that you are connected to the station Wi-Fi of IoT Device and is able to browse the IoT Device Portal (http://11.1.1.1/). The device is already connected to the internet if it shows the “Connected To” panel with blue background
+ 3. **Connecting the device to the Internet**  
+  - Make sure that you are connected to the station Wi-Fi of IoT Device and is able to browse the IoT Device Portal (http://11.1.1.1/). The device is already connected to the internet if it shows the “Connected To” panel with blue background 
 
 ![weather-bayanihan-04-connectingtodevice8](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice8.png)
 
- - While in the IoT Device portal, choose the Wi-Fi SSID that that has a reliable internet connection. Provide the password in the password box and tap connect.
+ - While in the IoT Device portal, choose the Wi-Fi SSID that that has a reliable internet connection. Provide the password in the password box and tap connect. 
 
-![weather-bayanihan-04-connectingtodevice9](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice9.png)![weather-bayanihan-04-connectingtodevice10](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice10.png)
+![weather-bayanihan-04-connectingtodevice9](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice9.png)
+![weather-bayanihan-04-connectingtodevice10](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice10.png)
+
+ - The connection between the IoT Device and the mobile phone may disconnect at this point. Wait for the IoT device to connect to the. The IoT Device will retry five (5) times if it is unable to connect. The IoT Device portal should indicate the status of its connection on its top most part of the page  
+
+![weather-bayanihan-04-connectingtodevice11](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice11.png) 
+
+ 4. **Adding device identifications**  
+ - The device Id is used in order for the Weather Bayanihan system to recognize a pre-built IoT device. In these steps, the pre-built IoT Device accepts the device Id generated thru the device registration in Weather Bayanihan PH  
+ - Make sure that you are connected to the station Wi-Fi of IoT Device and is able to browse the IoT Device Portal (http://11.1.1.1/). On the IoT Device Portal, click the change button in the Device Name panel to open it Device Identification Page. The Device Name panel also indicates the current device name
+
+![weather-bayanihan-04-connectingtodevice13](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice13.png) 
+
+ - On the Device Identification Page, this should indicate the current device name in the blue panel. The default device name and default password (“hello123”) can be reused for this step. Although any device name or new password can be used. Note that if the device name or its password has been changed, the Wi-Fi connection between the mobile phone and the IoT Device should be re-configured. Do not yet click the change button.
+
+![weather-bayanihan-04-connectingtodevice14](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-04-connectingtodevice14.png) 
+
+ - The connection between the IoT Device, the mobile phone and Wi-Fi may disconnect at this point. Wait for the IoT device to restart. 
+
+ 5. **Checking weather data**  
+ - Log-in to www.weather-bayanihan.ph if you are not logged-in yet. 
+ - Navigate to the registered devices page and open the device details of the registered device. Newest data should now be available as a pop-up of the pin in the device details Map. Data from the device should also be shown in the graphs 
+   
+![weather-bayanihan-05-weatherdata4](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-05-weatherdata4.png)
+![weather-bayanihan-05-weatherdata5](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/weather-bayanihan-05-weatherdata5.png)
 
 
 ## Troubleshooting 
