@@ -6,6 +6,12 @@ Docs and step by step guide on building your own IoT Weather Devices
  - [Quick start](#quick-start)
    - [Arduino Sketch](#1-arduino-sketch)
    - [Hardware PIN Configurations](#2-hardware-pin-configurations)
+   - [Connecting to the device](#3-connecting-to-the-device)
+     - Powering up the device
+     - Managing the IoT Device thru its Station Wi-Fi and Portal
+     - Connecting the device to the Internet
+     - Adding device identifications
+     - Checking weather data
  - [Troubleshooting](#troubleshooting)
 
 
