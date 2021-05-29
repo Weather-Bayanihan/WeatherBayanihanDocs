@@ -29,10 +29,10 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 **This code is made to work with ESP8266 version 2.7.4 or 2.7.3.**
 
-Install esp8266 core libraries using Arduino Board Manager. Go to Arduino IDE, Tools, Board, Board Manager. Search for "esp8266" and install version 2.7.4.
-![WeatherBayanihan-ArduinoBoardManager](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-BoardManager1.PNG)
-Detailed instructions are available in the official [Arduino / ESP8266 Documentation Site](https://arduino-esp8266.readthedocs.io/en/latest/installing.html#instructions)
+Install esp8266 core libraries using Arduino Board Manager. Go to Arduino IDE, Tools, Board, Board Manager. Search for "esp8266" and install version 2.7.4. Detailed instructions are available in the official [Arduino / ESP8266 Documentation Site](https://arduino-esp8266.readthedocs.io/en/latest/installing.html#instructions)
+![WeatherBayanihan-ArduinoBoardManager](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-ArduinoBoardManager1.PNG)
 
+*The only supported version for this library is 2.7.4 or 2.7.3. There are breaking changes to the Release 3.0.0 which is the latest version as of this writing. More information is located here: https://github.com/esp8266/Arduino/releases*
 
 ### 2. Arduino Sketch  
 **Clone (or download) the Repository and run with your Arduino IDE**  The main branch should complie without any error. You may need to familiarize yourself with the following important CPP and header files (or modules) that composes the project.
