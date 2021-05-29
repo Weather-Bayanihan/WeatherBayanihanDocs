@@ -4,9 +4,10 @@ Docs and step by step guide on building your own IoT Weather Devices
 ## Contents
  - [About](#about)
  - [Quick start](#quick-start)
-   - [Arduino Sketch](#1-arduino-sketch)
-   - [Hardware PIN Configurations](#2-hardware-pin-configurations)
-   - [Connecting to the device](#3-connecting-to-the-device)
+   - [Arduino Board Manager esp8266](#1-arduino-board-manager-esp8266)
+   - [Arduino Sketch](#2-arduino-sketch)
+   - [Hardware PIN Configurations](#3-hardware-pin-configurations)
+   - [Connecting to the device](#4-connecting-to-the-device)
      - Powering up the device
      - Managing the IoT Device thru its Station Wi-Fi and Portal
      - Connecting the device to the Internet
@@ -24,8 +25,16 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 - **Fast** No delays and uses non-blocking code.
 
 ## Quick Start
+### 1. Arduino Board Manager esp8266
 
-### 1. Arduino Sketch  
+**This code is made to work with ESP8266 version 2.7.4 or 2.7.3.**
+
+Install esp8266 core libraries using Arduino Board Manager. Go to Arduino IDE, Tools, Board, Board Manager. Search for "esp8266" and install version 2.7.4.
+![WeatherBayanihan-ArduinoBoardManager](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-BoardManager1.PNG)
+Detailed instructions are available in the official [Arduino / ESP8266 Documentation Site](https://arduino-esp8266.readthedocs.io/en/latest/installing.html#instructions)
+
+
+### 2. Arduino Sketch  
 **Clone (or download) the Repository and run with your Arduino IDE**  The main branch should complie without any error. You may need to familiarize yourself with the following important CPP and header files (or modules) that composes the project.
 
 - **WeatherBayanihanIoT** The Arduino Sketch. Shared configurations and variables are included in this file as preprocessor directives 
@@ -39,7 +48,7 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 ![WeatherBayanihan-ArduinoIDE](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-ArduinoIDE1.PNG)
 
 
-### 2. Hardware PIN Configurations  
+### 3. Hardware PIN Configurations  
 This library was tested in three (3) configurations and combinations of sensors and LCD. The following are the PIN outs of each.
 1. Using ESP8266 with DHT11 and BMP180
 2. Using ESP8266 with only BME280
@@ -60,7 +69,7 @@ This library was tested in three (3) configurations and combinations of sensors 
 ![WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-PINOUT-ESP8266-BME280-i2C-LCD.png)
 
 
-### 3. Connecting to the device 
+### 4. Connecting to the device 
 1. **Powering up the device**  
   - Connect the AC Adapter to the ESP8266 thru a 220V outlet.  
   - For versions with red LED, the device should light-up.  
