@@ -35,11 +35,13 @@ Install esp8266 core libraries using Arduino Board Manager. Go to Arduino IDE, T
 *The only supported version for this library is 2.7.4 or 2.7.3. There are breaking changes to the Release 3.0.0 which is the latest version as of this writing. More information is located here: https://github.com/esp8266/Arduino/releases*
 
 ### 2. Arduino Sketch  
-**Clone (or download) the Repository and run with your Arduino IDE**  The main branch should complie without any error. You may need to familiarize yourself with the following important CPP and header files (or modules) that composes the project.
+**Clone (or download) the Repository and run with your Arduino IDE**  The main branch should complie without any error. You may need to familiarize yourself with the following important CPP and header files (or modules) that composes the project. 
+
+https://github.com/Weather-Bayanihan/WeatherBayanihanIoT
 
 - **WeatherBayanihanIoT** The Arduino Sketch. Shared configurations and variables are included in this file as preprocessor directives 
 - **ConfigurableSerial** Manages the Serial Communications. This turns on or off Printing Serial for debugging.
-- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal. This is a fork from [ESP8266-SimpleWifiManager](https://github.com/johndelizo/ESP8266-SimpleWifiManager) and more details are available in its own Github Page.
+- **SimpleWifiManager** Manages the WiFi connection and Captive Base Station Portal.
 - **SimpleLCDManager** Manages how to print in LCD Screen
 - **SensorManager** Manages which sensors are enabled or disabled. 
 - **WeatherBayanihanIoTClientManager** Contains the HTTP Client and how to send data to [https://api.weather-bayanihan.ph/](https://api.weather-bayanihan.ph/) 
