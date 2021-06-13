@@ -46,6 +46,9 @@ https://github.com/Weather-Bayanihan/WeatherBayanihanIoT
 - **SensorManager** Manages which sensors are enabled or disabled. 
 - **WeatherBayanihanIoTClientManager** Contains the HTTP Client and how to send data to [https://api.weather-bayanihan.ph/](https://api.weather-bayanihan.ph/) 
 
+Note: This library requires Adafruit unified sensor library that can be installed in the Arduino Library Manager: 
+![Adafruit unified sensor](https://user-images.githubusercontent.com/1830478/120950269-0859b880-c779-11eb-8af9-7d6d3b179d31.png)
+
 
 ![WeatherBayanihan-ArduinoIDE](https://raw.githubusercontent.com/Weather-Bayanihan/WeatherBayanihanDocs/main/img/WeatherBayanihan-ArduinoIDE1.PNG)
 
