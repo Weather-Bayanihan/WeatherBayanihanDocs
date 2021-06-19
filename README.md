@@ -27,7 +27,7 @@ WeatherBayanihanIoT Project is a prebuilt Arduino code that uses an ESP8266 and 
 
 ## Quick Start
 ### 1. Drivers and Cables
-ESP8266 uses data cables and drivers that are fairly discussed here: https://github.com/esp8266/Arduino/issues/3551
+ESP8266 uses data cables and drivers that are fairly discussed [here](https://github.com/esp8266/Arduino/issues/3551)
 - https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 - https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers
 
